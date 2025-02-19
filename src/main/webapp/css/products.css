@@ -1,0 +1,214 @@
+/* Section */
+.section_tittle {
+    position: relative;
+}
+
+.section_tittle .subtitle {
+    display: block;
+    color: #ff3368;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.section_tittle .title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #333, #ff3368);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.title-divider .line {
+    height: 2px;
+    width: 60px;
+    background: linear-gradient(to right, transparent, #ff3368, transparent);
+}
+
+.title-divider i {
+    color: #ff3368;
+    font-size: 12px;
+}
+
+.section_tittle:hover .title {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Feature Part Styles */
+.feature_part .single_feature_post_text {
+    padding: 50px;
+    background-color: #f8fbff;
+    margin-bottom: 30px;
+    position: relative;
+    height: 400px;
+}
+
+@media (max-width: 991px) {
+    .feature_part .single_feature_post_text {
+        height: 300px;
+        padding: 35px 20px;
+    }
+}
+
+.feature_part .single_feature_post_text p {
+    line-height: 13px;
+}
+
+.feature_part .single_feature_post_text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 21px;
+}
+
+.feature_part .single_feature_post_text .feature_btn {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ff3368;
+    position: absolute;
+    left: 50px;
+    bottom: 60px;
+    line-height: 15px;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.feature_part .single_feature_post_text .feature_btn i {
+    font-weight: 700;
+    color: #ff3368;
+    margin-left: 6px;
+}
+
+.feature_part .single_feature_post_text img {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+
+/* Product List Styles */
+.product_list .section_tittle {
+    text-align: left !important;
+}
+
+.product_list .section_tittle h2 {
+    text-transform: capitalize;
+}
+
+.product_list .section_tittle span {
+    color: #adadad;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 60px;
+}
+
+.product_list .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -62px;
+}
+
+.product_list .owl-nav .owl-prev,
+.product_list .owl-nav .owl-next {
+    margin: 0 15px !important;
+    font-weight: 700 !important;
+}
+
+.product_list .owl-nav .owl-prev:after {
+    position: absolute;
+    right: -17px;
+    top: 3px;
+    width: 1px;
+    height: 16px;
+    content: "";
+    background-color: #000;
+}
+
+/* Single Product Styles */
+.single_product_item {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.single_product_item .single_product_text {
+    padding: 32px 0;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.single_product_item .single_product_text h4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.single_product_item .single_product_text h3 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.single_product_item .single_product_text a {
+    color: #ff3368;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.single_product_item .single_product_text a i {
+    float: right;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+}
+
+/* Hover Effects */
+.single_product_item:hover {
+    box-shadow: 0px 10px 20px 0px rgba(0, 23, 51, 0.09);
+}
+
+.single_product_item:hover .single_product_text {
+    padding: 32px 32px;
+}
+
+.single_product_item:hover a,
+.feature_part .single_feature_post_text:hover .feature_btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.feature_part .single_feature_post_text:hover .feature_btn {
+    bottom: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .single_product_item img,
+    .product_list .owl-nav {
+        width: 100%;
+    }
+
+    .feature_part .single_feature_post_text img {
+        max-height: 247px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+}
